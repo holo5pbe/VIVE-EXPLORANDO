@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/registrar.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../javascript/registrar.js"></script>
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous" ></script>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <a href="../html/index.html" class="logo nav-link">
+                    <img src="../imagenes/ViveExplorando.png" alt="Logo de Vive Explorando">
+                </a>
+            </div>
+            <div class="search-box">
+                <form action="">
+                    <input type="text" name="search" id="srch" placeholder="Busca tu evento">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link">Favoritos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="../html/login.html" class="nav-menu-link nav-link">Iniciar sesion</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="../html/registrar.html" class="nav-menu-link nav-link">Registrarse</a>
+                </li>
+            </ul>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div class="register-container">
+            <h2>Registrar Usuario</h2>
+            <form id="register-form">
+                <input type="text" id="new-username" placeholder="Nuevo Nombre de usuario" required>
+                <input type="password" id="new-password" placeholder="Nueva Contraseña" required>
+                <!-- Agrega más campos según tus necesidades -->
+                <button type="submit">Registrar</button>
+            </form>
+            <div id="registration-success" class="success-message"></div>
+            <div id="registration-error" class="error-message"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mi Sitio Web</p>
+    </footer>
+</body>
+</html>
